@@ -10,141 +10,47 @@
 
 # DealFeed
 
-A mobile product I built around a deliberately simple idea: **shopping deals should feel like a feed, not a catalogue**.
+A mobile product I built around a deliberately simple loop: **swipe deals, save what matters, open the merchant**.
 
-Swipe. Save. Open. Move on.
+No catalogue ceremony.
 
-<p align="center">
-  <img src="./assets/overview.svg" width="100%" alt="System overview"/>
-</p>
+<p align="center"><img src="./assets/product-mockup.svg" width="100%" alt="DealFeed mobile mockups"/></p>
 
-## <code>01 / product_loop</code>
+## <code>01 / product_surface</code>
 
-~~~text
-open app
-   ↓
-swipe deals
-   ↓
-save / skip
-   ↓
-tap "get it"
-   ↓
-validated affiliate redirect
-   ↓
-merchant
-~~~
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Feed
-
-React Native / Expo, vertical paging, local state and low-friction anonymous sessions.
-
-</td>
-<td width="33%" valign="top">
-
-### Backend
-
-Supabase/PostgreSQL, RLS, Edge Functions and scheduled product ingestion.
-
-</td>
-<td width="33%" valign="top">
-
-### Measurement
-
-Server-side click trail + privacy-aware client analytics and ad consent.
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-  <img src="./assets/architecture-visual.svg" width="100%" alt="Architecture visual"/>
-</p>
+<p align="center"><img src="./assets/features.svg" width="100%" alt="DealFeed features"/></p>
 
 ## <code>02 / architecture</code>
 
-~~~mermaid
-flowchart LR
-    APP[React Native app]
-    AUTH[Anonymous auth]
-    PG[(Postgres + RLS)]
-    EDGE[Edge Functions]
-    INGEST[Ingestion]
-    GO[Redirect]
-    DEL[Deletion]
-    PH[PostHog EU]
-    AFF[Affiliate source / merchant]
+<p align="center"><img src="./assets/architecture-visual.svg" width="100%" alt="DealFeed architecture"/></p>
 
-    APP --> AUTH
-    APP --> PG
-    APP --> EDGE
-    APP --> PH
+<p align="center"><img src="./assets/overview.svg" width="100%" alt="DealFeed system overview"/></p>
 
-    EDGE --> INGEST
-    EDGE --> GO
-    EDGE --> DEL
-    INGEST --> AFF
-    INGEST --> PG
-    GO --> PG
-    GO --> AFF
-~~~
+## <code>03 / shopping_loop</code>
 
-<p align="center">
-  <img src="./assets/flow-visual.svg" width="100%" alt="Workflow visual"/>
-</p>
+<p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="DealFeed product loop"/></p>
 
-## <code>03 / decisions_i_made</code>
+## <code>04 / decisions</code>
 
 | Decision | Why |
 |---|---|
 | React Native + Expo | one mobile codebase, fast iteration |
 | Zustand | enough state without framework ceremony |
-| FlashList | smoother media-heavy feed |
-| Anonymous auth | no signup wall before value |
-| PostgreSQL RLS | user-owned data isolation close to storage |
-| Edge redirect | auditable click trail even if client analytics fails |
-| allow-listed target domains | redirect safety |
-| explicit consent | analytics / ads are separate decisions |
+| anonymous auth | value before signup |
+| PostgreSQL RLS | user-owned isolation near storage |
+| edge redirect | auditable click trail |
+| explicit consent | analytics and ads are separate decisions |
 
-## <code>04 / ingestion_pipeline</code>
+**Keep the phone stupid:** clean, filter and dedupe the feed before it reaches the client.
 
-~~~text
-provider feed
-  → normalise
-  → quality filters
-  → dedupe
-  → batch upsert
-  → active feed
-~~~
-
-The point is to keep the client stupid: ingestion cleans the stream before the phone ever sees it.
-
-## <code>05 / privacy_is_a_flow</code>
-
-Deletion is not “put a button in settings”.
-
-It crosses:
-
-- application profile;
-- saved items;
-- server-side event identity;
-- analytics identity;
-- local session state.
-
-That is why it is implemented as a system flow.
-
-## <code>06 / technical_proof</code>
+## <code>05 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Privacy model](docs/PRIVACY.md)
 - [Sanitised ingestion logic](examples/ingest-products.ts)
 
-<details>
-<summary><b>Private source boundary</b></summary>
+<details><summary><b>Private source boundary</b></summary>
 
-Provider configuration, store credentials and the full mobile implementation stay private.
+Provider configuration, store credentials and the full mobile implementation remain private.
 
 </details>
