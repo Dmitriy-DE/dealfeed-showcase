@@ -43,6 +43,10 @@ No catalogue ceremony.
 
 **Keep the phone stupid:** clean, filter and dedupe the feed before it reaches the client.
 
+<p align="center">
+  <img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
+</p>
+
 ## <code>05 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
