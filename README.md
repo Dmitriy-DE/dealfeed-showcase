@@ -60,6 +60,10 @@ Server-side click trail + privacy-aware client analytics and ad consent.
 </tr>
 </table>
 
+<p align="center">
+  <img src="./assets/architecture-visual.svg" width="100%" alt="Architecture visual"/>
+</p>
+
 ## <code>02 / architecture</code>
 
 ~~~mermaid
@@ -87,6 +91,10 @@ flowchart LR
     GO --> PG
     GO --> AFF
 ~~~
+
+<p align="center">
+  <img src="./assets/flow-visual.svg" width="100%" alt="Workflow visual"/>
+</p>
 
 ## <code>03 / decisions_i_made</code>
 
