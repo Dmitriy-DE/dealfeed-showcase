@@ -14,6 +14,10 @@ A mobile product I built around a deliberately simple idea: **shopping deals sho
 
 Swipe. Save. Open. Move on.
 
+<p align="center">
+  <img src="./assets/overview.svg" width="100%" alt="System overview"/>
+</p>
+
 ## <code>01 / product_loop</code>
 
 ~~~text
