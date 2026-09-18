@@ -1,98 +1,138 @@
-<p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:0D1117,45:E1306C,100:FF9F1C&text=DealFeed&fontSize=42&fontColor=FFFFFF&fontAlignY=38&desc=Swipeable%20shopping%20feed%20for%20EU%20deals&descSize=16&descAlignY=60" />
-</p>
+<p align="center"><img src="./assets/hero.svg" width="100%" alt="DealFeed"/></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=000" />
-  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostHog-000000?style=for-the-badge&logo=posthog&logoColor=white" />
+  <img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=000"/>
+  <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostHog-EA580C?style=flat-square&logo=posthog&logoColor=white"/>
 </p>
 
-# DealFeed — mobile product engineering showcase
+# DealFeed
 
-A TikTok-style vertical feed for shopping deals: swipe, save, open the merchant, keep the product experience fast and keep analytics/consent explicit.
+A mobile product I built around a deliberately simple idea: **shopping deals should feel like a feed, not a catalogue**.
 
-The implementation repository is private. This showcase documents the architecture and core engineering decisions.
+Swipe. Save. Open. Move on.
 
-## Architecture
+## <code>01 / product_loop</code>
 
-```mermaid
-flowchart TB
-    APP[React Native / Expo]
-    AUTH[Anonymous Supabase Auth]
-    PG[(PostgreSQL + RLS)]
-    EDGE[Supabase Edge Functions]
-    INGEST[Affiliate ingestion]
-    REDIRECT[Validated redirect]
-    DELETE[GDPR deletion]
-    ANALYTICS[PostHog EU]
-    ADS[AdMob]
-    AFF[Affiliate providers]
+~~~text
+open app
+   ↓
+swipe deals
+   ↓
+save / skip
+   ↓
+tap "get it"
+   ↓
+validated affiliate redirect
+   ↓
+merchant
+~~~
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### Feed
+
+React Native / Expo, vertical paging, local state and low-friction anonymous sessions.
+
+</td>
+<td width="33%" valign="top">
+
+### Backend
+
+Supabase/PostgreSQL, RLS, Edge Functions and scheduled product ingestion.
+
+</td>
+<td width="33%" valign="top">
+
+### Measurement
+
+Server-side click trail + privacy-aware client analytics and ad consent.
+
+</td>
+</tr>
+</table>
+
+## <code>02 / architecture</code>
+
+~~~mermaid
+flowchart LR
+    APP[React Native app]
+    AUTH[Anonymous auth]
+    PG[(Postgres + RLS)]
+    EDGE[Edge Functions]
+    INGEST[Ingestion]
+    GO[Redirect]
+    DEL[Deletion]
+    PH[PostHog EU]
+    AFF[Affiliate source / merchant]
 
     APP --> AUTH
     APP --> PG
     APP --> EDGE
-    APP --> ANALYTICS
-    APP --> ADS
+    APP --> PH
 
     EDGE --> INGEST
-    EDGE --> REDIRECT
-    EDGE --> DELETE
+    EDGE --> GO
+    EDGE --> DEL
     INGEST --> AFF
     INGEST --> PG
-    REDIRECT --> PG
-    REDIRECT --> AFF
-```
+    GO --> PG
+    GO --> AFF
+~~~
 
-## Product / engineering decisions
+## <code>03 / decisions_i_made</code>
 
-- React Native + Expo for a single iOS/Android codebase.
-- TypeScript throughout the app.
-- Zustand for lightweight persisted client state.
-- FlashList for media-heavy vertical feed rendering.
-- Supabase anonymous auth to minimise signup friction.
-- PostgreSQL RLS to keep user-owned state isolated.
-- Edge Functions for ingestion, redirect tracking and deletion flows.
-- Server-side affiliate redirect allow-listing.
-- Daily product ingestion with quality filters + deduplication.
-- Explicit analytics and advertising consent.
-- GDPR data deletion across application state and analytics identity.
+| Decision | Why |
+|---|---|
+| React Native + Expo | one mobile codebase, fast iteration |
+| Zustand | enough state without framework ceremony |
+| FlashList | smoother media-heavy feed |
+| Anonymous auth | no signup wall before value |
+| PostgreSQL RLS | user-owned data isolation close to storage |
+| Edge redirect | auditable click trail even if client analytics fails |
+| allow-listed target domains | redirect safety |
+| explicit consent | analytics / ads are separate decisions |
 
-## Data flow
+## <code>04 / ingestion_pipeline</code>
 
-```text
-affiliate source
-      ↓
-scheduled ingestion
-      ↓
-quality filter + dedupe
-      ↓
-PostgreSQL
-      ↓
-mobile feed
-      ↓
-validated /go redirect
-      ↓
-merchant
-```
+~~~text
+provider feed
+  → normalise
+  → quality filters
+  → dedupe
+  → batch upsert
+  → active feed
+~~~
 
-## Privacy by design
+The point is to keep the client stupid: ingestion cleans the stream before the phone ever sees it.
 
-The project treats consent and deletion as system behaviour rather than a settings-page afterthought.
+## <code>05 / privacy_is_a_flow</code>
 
-- Analytics can remain disabled until consent.
-- Advertising consent is tracked separately.
-- Saved user data is scoped by RLS.
-- Deletion removes owned state and de-identifies retained aggregate events.
+Deletion is not “put a button in settings”.
 
-## Repository map
+It crosses:
+
+- application profile;
+- saved items;
+- server-side event identity;
+- analytics identity;
+- local session state.
+
+That is why it is implemented as a system flow.
+
+## <code>06 / technical_proof</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Privacy model](docs/PRIVACY.md)
-- [Sanitised ingestion example](examples/ingest-products.ts)
+- [Sanitised ingestion logic](examples/ingest-products.ts)
 
-## Source availability
+<details>
+<summary><b>Private source boundary</b></summary>
 
-Full app source, provider configuration and store credentials remain private.
+Provider configuration, store credentials and the full mobile implementation stay private.
+
+</details>
