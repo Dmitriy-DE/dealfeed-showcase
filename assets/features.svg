@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410">
+<defs><linearGradient id="g"><stop stop-color="#e1306c"/><stop offset="1" stop-color="#ff9f1c"/></linearGradient></defs>
+<rect width="1200" height="410" rx="26" fill="#0d1117" stroke="#30363d"/>
+<text x="55" y="60" fill="#f0f6fc" font-family="Arial" font-size="24" font-weight="700">Product surface</text>
+<rect x="55" y="78" width="240" height="4" rx="2" fill="url(#g)"/>
+<g transform="translate(55 105)">
+<rect width="340" height="118" rx="18" fill="#111827" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="118" rx="3" fill="#e1306c"/>
+<text x="26" y="38" fill="#f0f6fc" font-family="Arial" font-size="17" font-weight="700">Swipe feed</text>
+<text x="26" y="67" fill="#8b949e" font-family="monospace" font-size="11">React Native / Expo</text>
+<text x="26" y="88" fill="#8b949e" font-family="monospace" font-size="11">FlashList</text>
+</g><g transform="translate(425 105)">
+<rect width="340" height="118" rx="18" fill="#111827" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="118" rx="3" fill="#ff9f1c"/>
+<text x="26" y="38" fill="#f0f6fc" font-family="Arial" font-size="17" font-weight="700">Anonymous auth</text>
+<text x="26" y="67" fill="#8b949e" font-family="monospace" font-size="11">no signup wall</text>
+<text x="26" y="88" fill="#8b949e" font-family="monospace" font-size="11">persisted session</text>
+</g><g transform="translate(795 105)">
+<rect width="340" height="118" rx="18" fill="#111827" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="118" rx="3" fill="#e1306c"/>
+<text x="26" y="38" fill="#f0f6fc" font-family="Arial" font-size="17" font-weight="700">RLS</text>
+<text x="26" y="67" fill="#8b949e" font-family="monospace" font-size="11">user-owned state</text>
+<text x="26" y="88" fill="#8b949e" font-family="monospace" font-size="11">storage boundary</text>
+</g><g transform="translate(55 250)">
+<rect width="340" height="118" rx="18" fill="#111827" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="118" rx="3" fill="#ff9f1c"/>
+<text x="26" y="38" fill="#f0f6fc" font-family="Arial" font-size="17" font-weight="700">Edge functions</text>
+<text x="26" y="67" fill="#8b949e" font-family="monospace" font-size="11">ingest · redirect</text>
+<text x="26" y="88" fill="#8b949e" font-family="monospace" font-size="11">delete flow</text>
+</g><g transform="translate(425 250)">
+<rect width="340" height="118" rx="18" fill="#111827" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="118" rx="3" fill="#e1306c"/>
+<text x="26" y="38" fill="#f0f6fc" font-family="Arial" font-size="17" font-weight="700">Analytics</text>
+<text x="26" y="67" fill="#8b949e" font-family="monospace" font-size="11">PostHog EU</text>
+<text x="26" y="88" fill="#8b949e" font-family="monospace" font-size="11">explicit consent</text>
+</g><g transform="translate(795 250)">
+<rect width="340" height="118" rx="18" fill="#111827" stroke="#30363d"/>
+<rect x="0" y="0" width="6" height="118" rx="3" fill="#ff9f1c"/>
+<text x="26" y="38" fill="#f0f6fc" font-family="Arial" font-size="17" font-weight="700">Commerce</text>
+<text x="26" y="67" fill="#8b949e" font-family="monospace" font-size="11">affiliate filtering</text>
+<text x="26" y="88" fill="#8b949e" font-family="monospace" font-size="11">safe redirect</text>
+</g>
+</svg>
