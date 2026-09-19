@@ -1,18 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
-<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
-<linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e1306c"/><stop offset="1" stop-color="#ff9f1c"/></linearGradient>
-<filter id="g"><feGaussianBlur stdDeviation="32"/></filter>
-</defs>
-<rect width="1200" height="400" rx="28" fill="url(#bg)"/>
-<circle cx="1050" cy="50" r="160" fill="#ff9f1c" opacity=".16" filter="url(#g)"/>
-<circle cx="850" cy="330" r="180" fill="#e1306c" opacity=".12" filter="url(#g)"/>
-<g opacity=".08" stroke="#8b949e"><path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200"/><path d="M150 0V400M300 0V400M450 0V400M600 0V400M750 0V400M900 0V400M1050 0V400"/></g>
-<text x="70" y="105" fill="#8b949e" font-family="monospace" font-size="15">PUBLIC ENGINEERING SHOWCASE</text>
-<text x="70" y="175" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700">DealFeed</text>
-<rect x="70" y="198" width="520" height="5" rx="2.5" fill="url(#a)"/>
-<text x="70" y="250" fill="#c9d1d9" font-family="Arial,Helvetica,sans-serif" font-size="20">A swipe-first mobile commerce feed with privacy-aware data flows</text>
-<g transform="translate(70 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">React Native</text></g><g transform="translate(220 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">Supabase</text></g><g transform="translate(370 320)"><rect width="132" height="34" rx="17" fill="#161b22" stroke="#30363d"/><text x="66" y="22" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">Edge</text></g>
-<path d="M935 118 L958 118 L958 204 L790 204" fill="none" stroke="#e1306c" opacity=".55"/>
-<g transform="translate(790 90)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#e1306c"/><text x="72.5" y="33" text-anchor="middle" fill="#f0f6fc" font-family="monospace" font-size="13">mobile</text></g><g transform="translate(960 90)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">feed</text></g><g transform="translate(790 176)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">edge fn</text></g><g transform="translate(960 176)"><rect width="145" height="56" rx="12" fill="#0d1117" stroke="#30363d"/><text x="72.5" y="33" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13">analytics</text></g>
+<defs><linearGradient id="img" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#342041"/><stop offset=".55" stop-color="#7c2430"/><stop offset="1" stop-color="#e15a32"/></linearGradient></defs>
+<rect width="1200" height="400" rx="28" fill="#0a0a0a"/>
+<text x="64" y="82" fill="#666" font-family="monospace" font-size="12">PUBLIC ENGINEERING SHOWCASE</text>
+<text x="64" y="149" fill="#fff" font-family="Arial" font-size="54" font-weight="800">DealFeed</text>
+<text x="64" y="190" fill="#b8b8b8" font-family="Arial" font-size="19">Full-screen swipeable product deals</text>
+<rect x="64" y="214" width="286" height="5" rx="2.5" fill="#FF3B30"/>
+<text x="64" y="260" fill="#777" font-family="Arial" font-size="14">Feed · Saved · WebView · Settings · Consent</text>
+<g transform="translate(64 310)"><g transform="translate(0 0)"><rect width="110" height="31" rx="15.5" fill="#1c1c1e" stroke="#343438"/><text x="55" y="19" text-anchor="middle" fill="#d8d8d8" font-family="monospace" font-size="10">React Native</text></g><g transform="translate(125 0)"><rect width="110" height="31" rx="15.5" fill="#1c1c1e" stroke="#343438"/><text x="55" y="19" text-anchor="middle" fill="#d8d8d8" font-family="monospace" font-size="10">Expo</text></g><g transform="translate(250 0)"><rect width="110" height="31" rx="15.5" fill="#1c1c1e" stroke="#343438"/><text x="55" y="19" text-anchor="middle" fill="#d8d8d8" font-family="monospace" font-size="10">Supabase</text></g><g transform="translate(375 0)"><rect width="110" height="31" rx="15.5" fill="#1c1c1e" stroke="#343438"/><text x="55" y="19" text-anchor="middle" fill="#d8d8d8" font-family="monospace" font-size="10">PostHog</text></g></g>
+<g transform="translate(848 35)">
+<rect width="246" height="330" rx="38" fill="#1c1c1e" stroke="#3a3a3a"/>
+<rect x="14" y="18" width="218" height="294" rx="28" fill="url(#img)"/>
+<rect x="159" y="35" width="56" height="26" rx="8" fill="#FF3B30"/><text x="187" y="52" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="800">-38%</text>
+<rect x="14" y="180" width="218" height="132" fill="#000" opacity=".56"/>
+<text x="30" y="218" fill="#c8c8c8" font-family="Arial" font-size="8" font-weight="700">DEMO STORE</text>
+<text x="30" y="241" fill="#fff" font-family="Arial" font-size="14" font-weight="700">Wireless headphones</text>
+<text x="30" y="263" fill="#FFD700" font-family="Arial" font-size="9">★ 4.7 (1,284)</text>
+<text x="30" y="287" fill="#fff" font-family="Arial" font-size="16" font-weight="800">€59.90</text><text x="90" y="287" fill="#aaa" font-family="Arial" font-size="10" text-decoration="line-through">€96.90</text>
+</g>
 </svg>
