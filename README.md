@@ -16,25 +16,31 @@ No catalogue ceremony.
 
 <p align="center"><img src="./assets/product-mockup.svg" width="100%" alt="DealFeed mobile mockups"/></p>
 
-## <code>01 / product_surface</code>
+<p align="center"><sub>Illustrative records; screen hierarchy, labels and visual system are reconstructed from the private source.</sub></p>
+
+## <code>01 / actual_surfaces</code>
+
+<p align="center"><img src="./assets/actual-surfaces.svg" width="100%" alt="Actual product surfaces"/></p>
+
+## <code>02 / product_surface</code>
 
 <p align="center"><img src="./assets/features.svg" width="100%" alt="DealFeed features"/></p>
 
-## <code>02 / core_model</code>
+## <code>03 / core_model</code>
 
 <p align="center"><img src="./assets/core-model.svg" width="100%" alt="Mobile loop model"/></p>
 
-## <code>03 / architecture</code>
+## <code>04 / architecture</code>
 
 <p align="center"><img src="./assets/architecture-visual.svg" width="100%" alt="DealFeed architecture"/></p>
 
 <p align="center"><img src="./assets/overview.svg" width="100%" alt="DealFeed system overview"/></p>
 
-## <code>04 / shopping_loop</code>
+## <code>05 / shopping_loop</code>
 
 <p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="DealFeed product loop"/></p>
 
-## <code>05 / decisions</code>
+## <code>06 / decisions</code>
 
 | Decision | Why |
 |---|---|
@@ -47,13 +53,13 @@ No catalogue ceremony.
 
 **Keep the phone stupid:** clean, filter and dedupe the feed before it reaches the client.
 
-## <code>06 / engineering_signature</code>
+## <code>07 / engineering_signature</code>
 
 <p align="center">
   <img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
 </p>
 
-## <code>07 / inspect</code>
+## <code>08 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Privacy model](docs/PRIVACY.md)
