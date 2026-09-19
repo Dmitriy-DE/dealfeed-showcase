@@ -1,33 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
-<defs><linearGradient id="g"><stop stop-color="#e1306c"/><stop offset="1" stop-color="#ff9f1c"/></linearGradient></defs>
-<rect width="1200" height="300" rx="26" fill="#0d1117" stroke="#30363d"/>
-<text x="48" y="58" fill="#f0f6fc" font-family="Arial" font-size="24" font-weight="700">Mobile loop model</text>
-<text x="48" y="84" fill="#8b949e" font-family="monospace" font-size="11">the objects / states the rest of the system is built around</text>
+<defs><linearGradient id="g"><stop stop-color="#FF3B30"/><stop offset="1" stop-color="#FFD700"/></linearGradient></defs>
+<rect width="1200" height="300" rx="26" fill="#0a0a0a" stroke="#343438"/>
+<text x="48" y="58" fill="#ffffff" font-family="Arial" font-size="24" font-weight="700">Mobile loop model</text>
+<text x="48" y="84" fill="#777777" font-family="monospace" font-size="11">the objects / states the rest of the system is built around</text>
 <rect x="48" y="99" width="250" height="4" rx="2" fill="url(#g)"/>
 <g transform="translate(48 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#e1306c" font-family="monospace" font-size="10">01</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Feed item</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">discover</text>
+<rect width="206.4" height="110" rx="17" fill="#1c1c1e" stroke="#343438"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#FF3B30" font-family="monospace" font-size="10">01</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="700">Feed item</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#777777" font-family="monospace" font-size="9">discover</text>
 </g><g transform="translate(272.4 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#ff9f1c" font-family="monospace" font-size="10">02</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Save</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">intent</text>
+<rect width="206.4" height="110" rx="17" fill="#1c1c1e" stroke="#343438"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#FFD700" font-family="monospace" font-size="10">02</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="700">Save</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#777777" font-family="monospace" font-size="9">intent</text>
 </g><g transform="translate(496.8 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#e1306c" font-family="monospace" font-size="10">03</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Redirect</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">commerce</text>
+<rect width="206.4" height="110" rx="17" fill="#1c1c1e" stroke="#343438"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#FF3B30" font-family="monospace" font-size="10">03</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="700">Redirect</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#777777" font-family="monospace" font-size="9">commerce</text>
 </g><g transform="translate(721.2 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#ff9f1c" font-family="monospace" font-size="10">04</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Consent</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">privacy</text>
+<rect width="206.4" height="110" rx="17" fill="#1c1c1e" stroke="#343438"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#FFD700" font-family="monospace" font-size="10">04</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="700">Consent</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#777777" font-family="monospace" font-size="9">privacy</text>
 </g><g transform="translate(945.6 132)">
-<rect width="206.4" height="110" rx="17" fill="#111827" stroke="#30363d"/>
-<text x="103.2" y="31" text-anchor="middle" fill="#e1306c" font-family="monospace" font-size="10">05</text>
-<text x="103.2" y="63" text-anchor="middle" fill="#f0f6fc" font-family="Arial" font-size="15" font-weight="700">Analytics</text>
-<text x="103.2" y="86" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">measure</text>
+<rect width="206.4" height="110" rx="17" fill="#1c1c1e" stroke="#343438"/>
+<text x="103.2" y="31" text-anchor="middle" fill="#FF3B30" font-family="monospace" font-size="10">05</text>
+<text x="103.2" y="63" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="700">Analytics</text>
+<text x="103.2" y="86" text-anchor="middle" fill="#777777" font-family="monospace" font-size="9">measure</text>
 </g>
 </svg>
