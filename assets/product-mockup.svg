@@ -1,51 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
-<defs><linearGradient id="p1"><stop stop-color="#5b21b6"/><stop offset="1" stop-color="#db2777"/></linearGradient><linearGradient id="p2"><stop stop-color="#0f766e"/><stop offset="1" stop-color="#14b8a6"/></linearGradient><linearGradient id="p3"><stop stop-color="#9a3412"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs>
-<rect width="1200" height="700" rx="28" fill="#090d16"/>
-<text x="66" y="72" fill="#f0f6fc" font-family="Arial" font-size="24" font-weight="700">Swipe. Save. Open.</text>
-<text x="66" y="98" fill="#8b949e" font-family="monospace" font-size="10">feed · saved · redirect · consent · analytics</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<defs>
+<linearGradient id="photo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1f2937"/><stop offset=".35" stop-color="#5b2149"/><stop offset=".7" stop-color="#9f2f38"/><stop offset="1" stop-color="#e16431"/></linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".92"/></linearGradient>
+</defs>
+<rect width="1200" height="720" rx="28" fill="#0a0a0a"/>
+<text x="62" y="62" fill="#fff" font-family="Arial" font-size="24" font-weight="800">Actual mobile surfaces</text>
+<text x="62" y="87" fill="#666" font-family="monospace" font-size="10">Feed · Saved · Settings · first-launch consent</text>
 
-<g transform="translate(85 126)">
-<rect width="270" height="500" rx="38" fill="#111827" stroke="#30363d"/>
-<rect x="16" y="22" width="238" height="456" rx="28" fill="#0d1117"/>
-<rect x="28" y="38" width="214" height="220" rx="22" fill="url(#p1)"/>
-<circle cx="54" cy="62" r="13" fill="#fff" opacity=".16"/><rect x="155" y="51" width="62" height="24" rx="12" fill="#0d1117" opacity=".55"/><text x="186" y="67" text-anchor="middle" fill="#fff" font-family="monospace" font-size="8">Electronics</text>
-<text x="30" y="291" fill="#8b949e" font-family="monospace" font-size="9">38% OFF</text>
-<text x="30" y="321" fill="#f0f6fc" font-family="Arial" font-size="18" font-weight="700">Wireless headphones</text>
-<text x="30" y="350" fill="#e1306c" font-family="Arial" font-size="20" font-weight="700">€59.90</text>
-<text x="30" y="376" fill="#8b949e" font-family="monospace" font-size="9">12 saved</text>
-<rect x="30" y="397" width="148" height="40" rx="12" fill="#e1306c"/><text x="104" y="422" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13" font-weight="700">Get it</text>
-<text x="202" y="422" fill="#c9d1d9" font-family="Arial" font-size="18">♡</text>
-<line x1="30" y1="450" x2="224" y2="450" stroke="#30363d"/>
-<text x="30" y="470" fill="#8b949e" font-family="monospace" font-size="8">redirect: allow-listed</text>
-</g><g transform="translate(465 126)">
-<rect width="270" height="500" rx="38" fill="#111827" stroke="#30363d"/>
-<rect x="16" y="22" width="238" height="456" rx="28" fill="#0d1117"/>
-<rect x="28" y="38" width="214" height="220" rx="22" fill="url(#p2)"/>
-<circle cx="54" cy="62" r="13" fill="#fff" opacity=".16"/><rect x="155" y="51" width="62" height="24" rx="12" fill="#0d1117" opacity=".55"/><text x="186" y="67" text-anchor="middle" fill="#fff" font-family="monospace" font-size="8">Home</text>
-<text x="30" y="291" fill="#8b949e" font-family="monospace" font-size="9">22% OFF</text>
-<text x="30" y="321" fill="#f0f6fc" font-family="Arial" font-size="18" font-weight="700">Coffee gear</text>
-<text x="30" y="350" fill="#14b8a6" font-family="Arial" font-size="20" font-weight="700">€34.50</text>
-<text x="30" y="376" fill="#8b949e" font-family="monospace" font-size="9">7 saved</text>
-<rect x="30" y="397" width="148" height="40" rx="12" fill="#0f766e"/><text x="104" y="422" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13" font-weight="700">Saved</text>
-<text x="202" y="422" fill="#f0f6fc" font-family="Arial" font-size="18">♥</text>
-<line x1="30" y1="450" x2="224" y2="450" stroke="#30363d"/>
-<text x="30" y="470" fill="#8b949e" font-family="monospace" font-size="8">saved with RLS</text>
-</g><g transform="translate(845 126)">
-<rect width="270" height="500" rx="38" fill="#111827" stroke="#30363d"/>
-<rect x="16" y="22" width="238" height="456" rx="28" fill="#0d1117"/>
-<rect x="28" y="38" width="214" height="220" rx="22" fill="url(#p3)"/>
-<circle cx="54" cy="62" r="13" fill="#fff" opacity=".16"/><rect x="155" y="51" width="62" height="24" rx="12" fill="#0d1117" opacity=".55"/><text x="186" y="67" text-anchor="middle" fill="#fff" font-family="monospace" font-size="8">Fashion</text>
-<text x="30" y="291" fill="#8b949e" font-family="monospace" font-size="9">41% OFF</text>
-<text x="30" y="321" fill="#f0f6fc" font-family="Arial" font-size="18" font-weight="700">Sneakers</text>
-<text x="30" y="350" fill="#f59e0b" font-family="Arial" font-size="20" font-weight="700">€72.00</text>
-<text x="30" y="376" fill="#8b949e" font-family="monospace" font-size="9">18 saved</text>
-<rect x="30" y="397" width="148" height="40" rx="12" fill="#9a3412"/><text x="104" y="422" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13" font-weight="700">Get it</text>
-<text x="202" y="422" fill="#c9d1d9" font-family="Arial" font-size="18">♡</text>
-<line x1="30" y1="450" x2="224" y2="450" stroke="#30363d"/>
-<text x="30" y="470" fill="#8b949e" font-family="monospace" font-size="8">analytics: consented</text>
+<g transform="translate(75 112)">
+<rect width="300" height="550" rx="42" fill="#1c1c1e" stroke="#3a3a3a"/>
+<rect x="15" y="20" width="270" height="510" rx="31" fill="url(#photo)"/>
+<rect x="15" y="200" width="270" height="330" rx="0" fill="url(#fade)"/>
+<rect x="202" y="52" width="64" height="29" rx="8" fill="#FF3B30"/><text x="234" y="71" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="800">-38%</text>
+<text x="34" y="340" fill="#bbb" font-family="Arial" font-size="9" font-weight="700" letter-spacing="1.2">DEMO STORE</text>
+<text x="34" y="372" fill="#fff" font-family="Arial" font-size="19" font-weight="700">Wireless headphones</text>
+<text x="34" y="397" fill="#fff" font-family="Arial" font-size="19" font-weight="700">with ANC</text>
+<text x="34" y="424" fill="#FFD700" font-family="Arial" font-size="11">★ 4.7  (1,284)</text>
+<text x="34" y="456" fill="#fff" font-family="Arial" font-size="24" font-weight="800">€59.90</text>
+<text x="114" y="456" fill="#aaa" font-family="Arial" font-size="12" text-decoration="line-through">€96.90</text>
+<rect x="34" y="476" width="94" height="38" rx="10" fill="#2c2c2e" stroke="#555"/><text x="81" y="500" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11">♡ Save</text>
+<rect x="138" y="476" width="128" height="38" rx="10" fill="#FF3B30"/><text x="202" y="500" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="800">Get It →</text>
+<text x="34" y="525" fill="#888" font-family="Arial" font-size="7">ⓘ We may earn a commission on purchases</text>
 </g>
 
-<g transform="translate(66 642)">
-<text x="0" y="0" fill="#8b949e" font-family="monospace" font-size="9">settings: analytics ✓ · ads consent ✓ · anonymous session · redirect audit trail</text>
+<g transform="translate(450 112)">
+<rect width="300" height="550" rx="42" fill="#1c1c1e" stroke="#3a3a3a"/>
+<rect x="15" y="20" width="270" height="510" rx="31" fill="#0a0a0a"/>
+<text x="34" y="70" fill="#fff" font-family="Arial" font-size="28" font-weight="800">Settings</text>
+<g transform="translate(30 100)"><text x="0" y="0" fill="#666" font-family="monospace" font-size="8">DEAL CATEGORIES</text><rect x="0" y="10" width="240" height="46" rx="9" fill="#1c1c1e"/><text x="13" y="38" fill="#fff" font-family="Arial" font-size="11">Electronics</text><rect x="190" y="22" width="38" height="20" rx="10" fill="#FF3B30"/><circle cx="218" cy="32" r="8" fill="#fff"/></g><g transform="translate(30 160)"><rect x="0" y="10" width="240" height="46" rx="9" fill="#1c1c1e"/><text x="13" y="38" fill="#fff" font-family="Arial" font-size="11">Fashion</text><rect x="190" y="22" width="38" height="20" rx="10" fill="#FF3B30"/><circle cx="218" cy="32" r="8" fill="#fff"/></g><g transform="translate(30 220)"><rect x="0" y="10" width="240" height="46" rx="9" fill="#1c1c1e"/><text x="13" y="38" fill="#fff" font-family="Arial" font-size="11">Home</text><rect x="190" y="22" width="38" height="20" rx="10" fill="#3a3a3a"/><circle cx="200" cy="32" r="8" fill="#fff"/></g><g transform="translate(30 280)"><text x="0" y="0" fill="#666" font-family="monospace" font-size="8">NOTIFICATIONS</text><rect x="0" y="10" width="240" height="46" rx="9" fill="#1c1c1e"/><text x="13" y="38" fill="#fff" font-family="Arial" font-size="11">Daily new deals digest</text><rect x="190" y="22" width="38" height="20" rx="10" fill="#FF3B30"/><circle cx="218" cy="32" r="8" fill="#fff"/></g><g transform="translate(30 340)"><text x="0" y="0" fill="#666" font-family="monospace" font-size="8">PRIVACY & CONSENT</text><rect x="0" y="10" width="240" height="46" rx="9" fill="#1c1c1e"/><text x="13" y="38" fill="#fff" font-family="Arial" font-size="11">Analytics</text><rect x="190" y="22" width="38" height="20" rx="10" fill="#FF3B30"/><circle cx="218" cy="32" r="8" fill="#fff"/></g><g transform="translate(30 400)"><rect x="0" y="10" width="240" height="46" rx="9" fill="#1c1c1e"/><text x="13" y="38" fill="#fff" font-family="Arial" font-size="11">Personalised Ads</text><rect x="190" y="22" width="38" height="20" rx="10" fill="#3a3a3a"/><circle cx="200" cy="32" r="8" fill="#fff"/></g>
+<text x="30" y="493" fill="#FF3B30" font-family="Arial" font-size="11">Privacy Policy ↗</text>
+<text x="30" y="520" fill="#777" font-family="monospace" font-size="8">DealFeed v1.0.0</text>
 </g>
+
+<g transform="translate(825 112)">
+<rect width="300" height="550" rx="42" fill="#1c1c1e" stroke="#3a3a3a"/>
+<rect x="15" y="20" width="270" height="510" rx="31" fill="#0a0a0a"/>
+<rect x="15" y="215" width="270" height="315" rx="28" fill="#1c1c1e"/>
+<text x="36" y="260" fill="#fff" font-family="Arial" font-size="19" font-weight="800">Your Privacy Choices</text>
+<text x="36" y="285" fill="#aaa" font-family="Arial" font-size="9">Choose analytics and ad preferences</text>
+<g transform="translate(36 310)"><rect width="228" height="72" rx="12" fill="#2c2c2e"/><text x="14" y="26" fill="#fff" font-family="Arial" font-size="12" font-weight="700">Analytics</text><text x="14" y="46" fill="#aaa" font-family="Arial" font-size="8">Anonymous usage signals</text><rect x="174" y="24" width="38" height="20" rx="10" fill="#3a3a3a"/><circle cx="184" cy="34" r="8" fill="#fff"/></g>
+<g transform="translate(36 393)"><rect width="228" height="72" rx="12" fill="#2c2c2e"/><text x="14" y="26" fill="#fff" font-family="Arial" font-size="12" font-weight="700">Personalised Ads</text><text x="14" y="46" fill="#aaa" font-family="Arial" font-size="8">Non-personalised without consent</text><rect x="174" y="24" width="38" height="20" rx="10" fill="#FF3B30"/><circle cx="202" cy="34" r="8" fill="#fff"/></g>
+<rect x="36" y="481" width="105" height="36" rx="10" fill="none" stroke="#777"/><text x="88" y="504" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10">Save choices</text>
+<rect x="151" y="481" width="113" height="36" rx="10" fill="#FF3B30"/><text x="207" y="504" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10" font-weight="700">Accept all</text>
+</g>
+<text x="62" y="694" fill="#666" font-family="monospace" font-size="8">illustrative product data · UI reconstructed from the mobile source</text>
 </svg>
