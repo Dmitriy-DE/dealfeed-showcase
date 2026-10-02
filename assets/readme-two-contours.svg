@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061018"/><stop offset="1" stop-color="#0b1217"/></linearGradient></defs>
+<rect width="1600" height="420" rx="26" fill="url(#bg)"/><rect x="1" y="1" width="1598" height="418" rx="25" fill="none" stroke="#1d5266"/>
+<text x="48" y="58" fill="#16d9ff" font-family="monospace" font-size="24" font-weight="700">TWO INDEPENDENT CONTOURS</text>
+<text x="48" y="92" fill="#a8bcc8" font-family="Arial" font-size="21">The broker UI can stop without breaking click tracking and postbacks.</text>
+
+<g transform="translate(55 135)">
+<rect width="675" height="220" rx="18" fill="#0a1720" stroke="#55b6ff"/>
+<text x="28" y="42" fill="#55b6ff" font-family="Arial" font-size="28" font-weight="700">Deal desk</text>
+<text x="28" y="76" fill="#dfe8ed" font-family="Arial" font-size="18">Python · Telethon · aiogram · SQLite</text>
+<text x="28" y="118" fill="#a0b2bc" font-family="Arial" font-size="17">Collects chats → parses intent → matches → alerts operator → manages deal terms.</text>
+<text x="28" y="153" fill="#a0b2bc" font-family="Arial" font-size="17">Needs to run while collecting sources and operating the broker workflow.</text>
+<text x="28" y="192" fill="#66df91" font-family="Arial" font-size="16" font-weight="700">Human-in-the-loop commercial control.</text>
+</g>
+
+<g transform="translate(870 135)">
+<rect width="675" height="220" rx="18" fill="#0a1720" stroke="#ff8a3d"/>
+<text x="28" y="42" fill="#ff8a3d" font-family="Arial" font-size="28" font-weight="700">Edge tracker</text>
+<text x="28" y="76" fill="#dfe8ed" font-family="Arial" font-size="18">Cloudflare Worker · D1 · always online</text>
+<text x="28" y="118" fill="#a0b2bc" font-family="Arial" font-size="17">Redirects clicks → receives advertiser postbacks → records conversions → computes margin.</text>
+<text x="28" y="153" fill="#a0b2bc" font-family="Arial" font-size="17">Also serves partner cabinet and owner/admin views.</text>
+<text x="28" y="192" fill="#66df91" font-family="Arial" font-size="16" font-weight="700">Traffic accounting survives local deal-desk downtime.</text>
+</g>
+</svg>
