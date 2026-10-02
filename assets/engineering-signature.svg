@@ -1,22 +1,2 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF3B30"/><stop offset="1" stop-color="#FFD700"/></linearGradient></defs>
-<rect width="1200" height="280" rx="24" fill="#0a0a0a" stroke="#343438"/>
-<text x="58" y="58" fill="#ffffff" font-family="Arial" font-size="23" font-weight="700">Engineering signature</text>
-<rect x="58" y="76" width="220" height="4" rx="2" fill="url(#g)"/>
-<g transform="translate(58 112)">
- <rect width="340" height="118" rx="18" fill="#1c1c1e" stroke="#343438"/>
- <text x="22" y="30" fill="#FF3B30" font-family="monospace" font-size="10">PROBLEM</text>
- <text x="22" y="61" fill="#ffffff" font-family="Arial" font-size="17" font-weight="700">shopping feels heavy</text>
- <text x="22" y="88" fill="#777777" font-family="monospace" font-size="11">catalog friction</text>
- </g><g transform="translate(438 112)">
- <rect width="340" height="118" rx="18" fill="#1c1c1e" stroke="#343438"/>
- <text x="22" y="30" fill="#FFD700" font-family="monospace" font-size="10">BUILD</text>
- <text x="22" y="61" fill="#ffffff" font-family="Arial" font-size="17" font-weight="700">swipe-first mobile loop</text>
- <text x="22" y="88" fill="#777777" font-family="monospace" font-size="11">ingest before client</text>
- </g><g transform="translate(818 112)">
- <rect width="340" height="118" rx="18" fill="#1c1c1e" stroke="#343438"/>
- <text x="22" y="30" fill="#34c759" font-family="monospace" font-size="10">GUARDRAIL</text>
- <text x="22" y="61" fill="#ffffff" font-family="Arial" font-size="17" font-weight="700">privacy is a system flow</text>
- <text x="22" y="88" fill="#777777" font-family="monospace" font-size="11">RLS / consent / deletion</text>
- </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="195" viewBox="0 0 1600 195"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050c12"/><stop offset=".6" stop-color="#07131b"/><stop offset="1" stop-color="#090f15"/></linearGradient><pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#0d2430"/></pattern></defs><rect width="1600" height="195" rx="28" fill="url(#bg)"/><rect width="1600" height="195" rx="28" fill="url(#grid)" opacity=".3"/><rect x="1" y="1" width="1598" height="193" rx="27" fill="none" stroke="#1d5266"/><text x="36" y="44" fill="#16d9ff" font-family="monospace" font-size="15">› engineering_signature</text><text x="260" y="44" fill="#879eaa" font-family="Arial" font-size="12">Core principles behind the broker workflow.</text>
+<g transform="translate(35 70)"><rect width="365" height="92" rx="15" fill="#08141d" stroke="#1d5266"/><rect width="4" height="92" rx="2" fill="#16d9ff"/><text x="18" y="25" fill="#16d9ff" font-family="monospace" font-size="9">EXPLICIT DEAL STATE</text><text x="18" y="51" fill="#f4f8fb" font-family="Arial" font-size="15" font-weight="700">Every deal is traceable</text><text x="18" y="76" fill="#879eaa" font-family="Arial" font-size="10.5">from intake to terms, tracking and payout</text></g><g transform="translate(416 70)"><rect width="365" height="92" rx="15" fill="#08141d" stroke="#1d5266"/><rect width="4" height="92" rx="2" fill="#2fe3b0"/><text x="18" y="25" fill="#2fe3b0" font-family="monospace" font-size="9">HUMAN-IN-THE-LOOP</text><text x="18" y="51" fill="#f4f8fb" font-family="Arial" font-size="15" font-weight="700">Operator controls automation</text><text x="18" y="76" fill="#879eaa" font-family="Arial" font-size="10.5">suggestions and queues, not black boxes</text></g><g transform="translate(797 70)"><rect width="365" height="92" rx="15" fill="#08141d" stroke="#1d5266"/><rect width="4" height="92" rx="2" fill="#ff8a3d"/><text x="18" y="25" fill="#ff8a3d" font-family="monospace" font-size="9">EDGE RELIABILITY</text><text x="18" y="51" fill="#f4f8fb" font-family="Arial" font-size="15" font-weight="700">Tracker survives laptop downtime</text><text x="18" y="76" fill="#879eaa" font-family="Arial" font-size="10.5">Cloudflare Worker + D1 stay online</text></g><g transform="translate(1178 70)"><rect width="387" height="92" rx="15" fill="#08141d" stroke="#1d5266"/><rect width="4" height="92" rx="2" fill="#8b5cf6"/><text x="18" y="25" fill="#8b5cf6" font-family="monospace" font-size="9">AUDIT EVIDENCE</text><text x="18" y="51" fill="#f4f8fb" font-family="Arial" font-size="15" font-weight="700">Source and approvals retained</text><text x="18" y="76" fill="#879eaa" font-family="Arial" font-size="10.5">verbatim messages · approved text · idempotent events</text></g></svg>
